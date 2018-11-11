@@ -1,0 +1,48 @@
+/* LIST GROUP */
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group-item {
+    margin-top: 1rem;
+    &:first-child {
+        margin-top: 0;
+    }
+    &[data-active='inactive'] {
+        opacity: .5;
+    }
+    a {
+        align-items: center;
+        color: $grayDark;
+        display: flex;
+        padding: 0 ($gap * 1.5);
+        &>* {
+            align-items: center;
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            margin-right: $gap;
+            position: relative;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .flex-card & {
+            padding: 0;
+        }
+        &>img {
+            height: 2rem;
+            max-width: 2rem;
+            margin-right: $gap;
+        }
+    }
+    img {
+        margin-right: $gap * .5;
+    }
+    h4 {
+        color: $blackMedium;
+        font-weight: 500;
+    }
+}

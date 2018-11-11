@@ -1,0 +1,22 @@
+/* BADGE */
+
+%badge {
+    border-radius: 1rem;
+    display: inline-block;
+    font-size: .75em;
+    height: 20px;
+    line-height: .5rem;
+    padding: 6px 12px;
+}
+
+.badge-red {
+    @extend %badge;
+    background-color: #FFE2E9;
+    color: #FC9BAF;
+}
+
+.badge-blue {
+    @extend %badge;
+    background-color: #DDEAFF;
+    color: #A6C5FF;
+}

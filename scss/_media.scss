@@ -1,0 +1,23 @@
+/* MEDIA */
+
+.media {
+    align-items: center;
+    display: flex;
+    padding: 0 $gap;
+    img {
+        margin-right: $gap;
+        max-width: 3rem;
+    }
+    [class*='body'] {
+        align-self: center;
+        flex: 1;
+    }
+    h3 {
+        color: $blackMedium;
+        font-weight: 500;
+    }
+    p {
+        color: $grayDark;
+        font-size: .85em;
+    }
+}

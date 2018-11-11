@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body id="js-body">
+    <nav class="nav">
+        <div class="nav-left">
+            <p>Boards</p>
+        </div>
+        <div class="nav-search">
+            <input type="search" placeholder="Search" />
+        </div>
+        <div class="nav-right">
+            <div class="media">
+                <img src="https://fakeimg.pl/36x36/FC9BAF/000/?text=World&font=lobster" />
+                <div class="media-body">
+                    <h3>Hello, Gino!</h3>
+                </div>
+            </div>
+            <div class="link info">
+                <a href=""><i class="far fa-bell"></i></a>
+            </div>
+            <div class="link open">
+                <a href="" id="js-open">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <aside class="sidebar">
+            <div class="sidebar-container">
+                <header class="media">
+                    <img src="https://fakeimg.pl/64x64/FC9BAF/000/?text=World&font=lobster" />
+                    <div class="media-body">
+                        <h3>Planner Board</h3>
+                        <p>Netguru</p>
+                    </div>
+                </header>
+                <div class="flex-grid">
+                    <section>
+                        <h4>Filter by board</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item" data-active="inactive">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/00ff00/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Planner Board</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/A6C5FF/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Planner Board</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="inactive">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/FC9BAF/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Planner Board</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/f0ff0f/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Planner Board</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Filter by Member</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/FC9BAF/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/00ff00/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Person Numer Two</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </aside>
+        <div class="body">
+            <section class="body-container">
+                <header class="flex-grid flex-header">
+                    <article class="media">
+                        <img src="https://fakeimg.pl/64x64/FC9BAF/000/?text=World&font=lobster" />
+                        <div class="media-body">
+                            <h3>Planner Board - Summary</h3>
+                            <p>Netguru</p>
+                        </div>
+                    </article>
+                    <article class="button-group">
+                        <div>
+                            <a href="" class="active">Board Stats</a>
+                            <a href="">My Stats</a>
+                        </div>
+                    </article>
+                </header>
+                <div class="flex-grid flex-cards">
+                    <div class="flex-card flex-card-24">
+                        <h4>Tasks Completed</h4>
+                        <img src="img/chart1.png" />
+                    </div>
+                    <div class="flex-card">
+                        <h4>Recent Activity</h4>
+                        <img src="img/chart2.png" />
+                    </div>
+                    <div class="flex-card flex-card-24">
+                        <h4>Summary</h4>
+                        <img src="img/chart3.png" />
+                    </div>
+                </div>
+                <!-- --->
+                <div class="flex-grid flex-cards">
+                    <div class="flex-card">
+                        <h4>User Activity</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/FC9BAF/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                    <div class="list-group-footer">
+                                        <img src="https://fakeimg.pl/200x3/A6C5FF/000" />
+                                        <p>12/24</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/00ff00/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Person Numer Two</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                    <div class="list-group-footer">
+                                        <img src="https://fakeimg.pl/200x3/A6C5FF/000" />
+                                        <p>12/24</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/A6C5FF/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Person Numer Three</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                    <div class="list-group-footer">
+                                        <img src="https://fakeimg.pl/200x3/A6C5FF/000" />
+                                        <p>12/24</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <img src="https://fakeimg.pl/64x64/ff00ff/000/?text=GN" />
+                                    <div class="list-group-body">
+                                        <h4>Person Numer Four</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                    <div class="list-group-footer">
+                                        <img src="https://fakeimg.pl/200x3/A6C5FF/000" />
+                                        <p>12/24</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-card flex-card-wrap">
+                        <h4>Last Tasks</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                        <span class="badge-red">1 day</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                        <span class="badge-blue">1 day</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                        <span class="badge-blue">1 day</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item" data-active="active">
+                                <a href="">
+                                    <div class="list-group-body">
+                                        <h4>Person Numer One</h4>
+                                        <p>2 days ago</p>
+                                        <span class="badge-red">1 day</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <button class="button-plus">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+    </main>
+
+    <script>
+        var element = document.getElementById('js-body');
+        var trigger = document.getElementById('js-open'); // or whatever triggers the toggle
+
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            element.classList.toggle('is-sidebar'); // or whatever your active class is
+        });
+    </script>
+
+</body>
+
+</html>

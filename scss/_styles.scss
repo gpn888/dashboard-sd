@@ -1,0 +1,58 @@
+/* FIXES */
+
+.flex-card-wrap {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >h4 {
+        min-width: 100%;
+    }
+    ul {
+        min-width: 48%;
+    }
+    .list-group-item a>* {
+        display: block;
+        padding-right: 3.5rem;
+    }
+}
+
+@include respond-below(lg) {
+    .flex-card {
+        &:not(.flex-card-wrap) {
+            .list-group-item a {
+                flex-wrap: wrap;
+                & [class*='body'] {
+                    margin-right: 0;
+                    & p {
+                        text-align: right;
+                    }
+                }
+                & [class*='footer'] {
+                    margin-top: .5rem;
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+    .flex-card-wrap ul {
+        min-width: 100%;
+    }
+}
+
+.media,
+.list-group-item {
+    img {
+        border-radius: $gap / 2;
+    }
+}
+
+.list-group-item {
+    [class*='badge'] {
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

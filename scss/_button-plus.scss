@@ -1,0 +1,31 @@
+.button-plus {
+    position: fixed;
+    bottom: $gap;
+    right: $gap;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    z-index: 2;
+    background: #5390FF;
+    color: white;
+    transition: .25s ease-in-out right;
+}
+
+@include respond-above(sm) {
+    .button-plus {
+        .is-sidebar & {
+            right: 20rem!important;
+        }
+    }
+}
+
+@include respond-above(md) {
+    .button-plus {
+        bottom: 3 * $gap;
+        right: 5 * $gap;
+    }
+}

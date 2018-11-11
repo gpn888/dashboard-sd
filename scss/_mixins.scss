@@ -1,0 +1,16 @@
+//MIXINS
+@mixin FlexLayout {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin SubTitle($marginSubTitle: 2.5rem $gap) {
+    color: $grayDark;
+    font: {
+        size: .75em;
+        weight: 500;
+    }
+    letter-spacing: 1px;
+    margin: $marginSubTitle;
+    text-transform: uppercase;
+}
