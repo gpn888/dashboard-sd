@@ -18,6 +18,7 @@ html, body { font-family: 'Roboto', Arial, sans-serif; font-size: 1em; font-weig
 
 body { font-size: 14px; overflow-x: hidden; }
 
+/* mas importacion */
 /* NAV */
 .nav { align-items: center; background-color: #fff; display: flex; justify-content: space-between; min-height: 4rem; padding: 0 1.5rem; width: 100%; }
 .nav .nav-right { justify-content: flex-end; display: flex; flex: 1; }
@@ -59,6 +60,23 @@ main { background-color: #f4f4f4; }
   .flex-card { margin: 0 2rem 2rem 0; padding: 2.5rem 2rem; }
   .flex-card:last-child { margin-right: 0; }
   .flex-card.flex-card-24 { max-width: 24%; } }
+/* HEADER */
+.flex-header { margin-bottom: 1rem; }
+.flex-header .media { margin: auto; margin-bottom: 1rem; position: relative; z-index: 2; }
+
+.button-group { min-width: 100%; text-align: center; z-index: 1; }
+.button-group div { margin: auto; width: auto; display: inline-block; }
+.button-group div a { display: block; border: 1px solid #aaa; width: 7rem; float: left; padding: .5rem 1rem; font-weight: 500; font-size: .85em; color: #777; transition: .25s background-color; }
+.button-group div a:first-child { border-right: 0; border-radius: 5px 0 0 5px; }
+.button-group div a:last-child { border-radius: 0 5px 5px 0; }
+.button-group div a.active { background-color: #fff; }
+.button-group div a:hover { background-color: #DDEAFF; }
+
+@media (min-width: 576px) { .flex-header { min-height: 4rem; position: relative; }
+  .flex-header .media { position: absolute; left: -1rem; top: -.5rem; min-width: 0; z-index: 2; }
+  .button-group { text-align: right; }
+  .button-group a { text-align: center; } }
+@media (min-width: 768px) { .button-group { text-align: center; } }
 /* OPEN SIDEBAR */
 @media (min-width: 768px) { .body { min-width: 100%; transition: .25s ease-in-out min-width; }
   .sidebar { transform: translate3d(15rem, 0, 0); transition: .15s ease-in-out transform; }
@@ -116,20 +134,3 @@ main { background-color: #f4f4f4; }
 .media img, .list-group-item img { border-radius: 0.5rem; }
 
 .list-group-item [class*='badge'] { bottom: 0; margin: auto; position: absolute; right: 0; top: 0; }
-
-.flex-header { margin-bottom: 1rem; }
-.flex-header .media { margin: auto; margin-bottom: 1rem; position: relative; z-index: 2; }
-
-.button-group { min-width: 100%; text-align: center; z-index: 1; }
-.button-group div { margin: auto; width: auto; display: inline-block; }
-.button-group div a { display: block; border: 1px solid #aaa; width: 7rem; float: left; padding: .5rem 1rem; font-weight: 500; font-size: .85em; color: #777; transition: .25s background-color; }
-.button-group div a:first-child { border-right: 0; border-radius: 5px 0 0 5px; }
-.button-group div a:last-child { border-radius: 0 5px 5px 0; }
-.button-group div a.active { background-color: #fff; }
-.button-group div a:hover { background-color: #DDEAFF; }
-
-@media (min-width: 576px) { .flex-header { min-height: 4rem; position: relative; }
-  .flex-header .media { position: absolute; left: -1rem; top: -.5rem; min-width: 0; z-index: 2; }
-  .button-group { text-align: right; }
-  .button-group a { text-align: center; } }
-@media (min-width: 768px) { .button-group { text-align: center; } }

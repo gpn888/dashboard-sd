@@ -20,6 +20,9 @@ body {
     overflow-x: hidden;
 }
 
+
+/* mas importacion */
+
 @import "nav";
 @import "sidebar";
 @import "body";
@@ -29,75 +32,3 @@ body {
 @import "badge";
 @import "button-plus";
 @import "styles";
-.flex-header {
-    margin-bottom: 1rem;
-    .media {
-        margin: auto;
-        margin-bottom: 1rem;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-.button-group {
-    min-width: 100%;
-    text-align: center;
-    z-index: 1;
-    div {
-        margin: auto;
-        width: auto;
-        display: inline-block;
-        a {
-            display: block;
-            border: 1px solid $grayDark;
-            width: 7rem;
-            float: left;
-            padding: .5rem 1rem;
-            font-weight: 500;
-            font-size: .85em;
-            color: $blackMedium;
-            transition: .25s background-color;
-            &:first-child {
-                border-right: 0;
-                border-radius: 5px 0 0 5px;
-            }
-            &:last-child {
-                border-radius: 0 5px 5px 0;
-            }
-            &.active {
-                background-color: $white;
-            }
-            &:hover {
-                background-color: #DDEAFF;
-            }
-        }
-    }
-}
-
-@include respond-above(xs) {
-    .flex-header {
-        min-height: 4rem;
-        position: relative;
-        .media {
-            position: absolute;
-            left: -1rem;
-            top: -.5rem;
-            min-width: 0;
-            z-index: 2;
-        }
-    }
-    .button-group {
-        text-align: right;
-        a {
-            text-align: center;
-        }
-    }
-}
-
-@include respond-above(sm) {
-    .button-group {
-        text-align: center;
-    }
-}
-
-@include respond-above(sm) {}
